@@ -89,7 +89,6 @@ class _AddTodoState extends State<AddTodo> {
             child: const Text('Cancel')),
         TextButton(
             onPressed: () {
-              print(_text);
               widget.callback(_text);
               Navigator.pop(context, 'OK');
             },
